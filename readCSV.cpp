@@ -55,7 +55,6 @@ int main(int argc, char *argv[])
 			stringstream tmp(data[i][3]);
 			int age;
 			tmp >> age;
-			//int age = stoi(data[i][3]);
 			stu[i].age = age;
 			stu[i].gender = data[i][4];
 		}
