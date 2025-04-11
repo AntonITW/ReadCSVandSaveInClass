@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 	ifstream file(argv[1]);
 	if (!file.is_open()) {
 		cerr << "Cannot open file!" << endl;
+		exit;
 	}
 
 	string data[MAX_ROWS][MAX_COLS];
