@@ -17,9 +17,8 @@ int main(int argc, char *argv[])
 	ifstream file(argv[1]);
 	if (!file.is_open()) {
 		cerr << "Cannot open file!" << endl;
-		exit;
 	}
-
+	else {
 	string data[MAX_ROWS][MAX_COLS];
 	string line;
 	int row = 0;
@@ -62,6 +61,7 @@ int main(int argc, char *argv[])
 	for (int i = 1; i < row; i++) {
 		cout << i << ". ";
 		stu[i].PrintInfo();
+	}
 	}
 	return 0;
 }
